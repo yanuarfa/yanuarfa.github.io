@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/pages.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <div class="container flex justify-between align-center relative">
+          <h1>YanuarFa</h1>
+          <ul class="list-style-none flex">
+            <li class="hamburger-toggle">
+              <button
+                class="hamburger-btn"
+                aria-controls="navigation"
+                aria-expanded="false"
+              >
+                <svg class="hamburger" viewBox="0 0 100 100" width="30">
+                  <rect
+                    class="line top"
+                    width="80"
+                    height="10"
+                    x="10"
+                    y="30"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    class="line middle"
+                    width="80"
+                    height="10"
+                    x="10"
+                    y="50"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    class="line bottom"
+                    width="80"
+                    height="10"
+                    x="10"
+                    y="70"
+                    rx="5"
+                  ></rect>
+                </svg>
+              </button>
+            </li>
+            <li class="mh-2 opacity-0">
+              <a href="#home" class="td-none link">Home</a>
+            </li>
+            <li class="mh-2 opacity-0">
+              <a href="#projects" class="td-none link">Projects</a>
+            </li>
+            <li class="mh-2 opacity-0">
+              <a href="#about" class="td-none link">About</a>
+            </li>
+            <li class="toggle-dark-mode mh-2 opacity-0 mvm-2">
+              <div class="toggleWrapper">
+                <input type="checkbox" class="dn" id="dn" />
+                <label for="dn" class="toggle">
+                  <span class="toggle__handler">
+                    <span class="crater crater--1"></span>
+                    <span class="crater crater--2"></span>
+                    <span class="crater crater--3"></span>
+                  </span>
+                  <span class="star star--1"></span>
+                  <span class="star star--2"></span>
+                  <span class="star star--3"></span>
+                  <span class="star star--4"></span>
+                  <span class="star star--5"></span>
+                  <span class="star star--6"></span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-100px">
+      <div class="container h-home flex align-center" id="home">
+        <div id="hello"></div>
+        <div class="wrapper-hero-section" id="home">
+          <section class="hero-section">
+            <article>
+              <div class="wrapper-hero-description">
+                <h1>
+                  <span>Hello!</span> <br />
+                  I'm Yanuar, <br />
+                  college student based <br />
+                  in Indonesia.
+                </h1>
+
+                <a onclick="hello();" class="btn-cta" id="btn-hello"
+                  >Say Hello</a
+                >
+                <a href="" class="btn-cta">Guestbook</a>
+              </div>
+            </article>
+            <article>
+              <div class="wrapper-hero-ilustration" id="hero_image"></div>
+            </article>
+          </section>
+        </div>
+      </div>
+      <div class="container h-fit-content h-400px mv-2" id="projects">
+        <div class="wrapper-projects-section" id="projects">
+          <section class="projects-section">
+            <article class="project">
+              <div class="project-wrapper">
+                <div class="project-description">
+                  <div class="title">
+                    <h1>Tesla Clone</h1>
+                    <h2>Personal Project</h2>
+                  </div>
+                  <div class="description">
+                    <p>
+                      My very first project on web dev was cloning tesla's
+                      website using only HTML, CSS, and a bit vanilla JS. First
+                      time kinda confused, but after sometime i finish it.
+                    </p>
+                    <a
+                      href="https://yanuarfatur0001.web.app/"
+                      class="btn-cta bg-blue"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+                <div class="project-img">
+                  <img src="assets/img/Tesla.png" alt="" />
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project-wrapper">
+                <div class="project-description">
+                  <div class="title">
+                    <h1>Title</h1>
+                    <h2>Tagline</h2>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Voluptas totam omnis optio iste facere fugit soluta est
+                      asperiores magnam cupiditate incidunt error ratione eum
+                      rem iusto ea, autem distinctio veniam.
+                    </p>
+                    <a href="" class="btn-cta bg-blue">View Project</a>
+                  </div>
+                </div>
+                <div class="project-img">
+                  <img
+                    src="https://source.unsplash.com/random/1000x1000/"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </article>
+            <!-- <article class="project"><h1>Project Two</h1></article> -->
+          </section>
+        </div>
+      </div>
+      <div class="container h-fit-content" id="about">
+        <div class="main-container">
+          <div class="grid-container">
+            <div class="card card--2x2">
+              <div class="card__content big-script padding-large">
+                <p>Travel and see the world</p>
+              </div>
+            </div>
+            <div class="card card--vertical">
+              <div class="card__image">
+                <img
+                  src="https://images.pexels.com/photos/443416/pexels-photo-443416.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"
+                />
+              </div>
+            </div>
+            <div class="card card--2x3">
+              <div class="card__top-to-bottom">
+                <div class="card__image">
+                  <img
+                    src="https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"
+                  />
+                </div>
+                <div class="card__content padding-mlarge--l">
+                  <h2>Quisque volutpat.</h2>
+                  <hr />
+                  <p>
+                    Nulla metus metus, ullamcorper vel, tincidunt sed, euismod
+                    in, nibh. Quisque volutpat condimentum velit.
+                  </p>
+                  <div class="card__button">
+                    More
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"
+                />
+              </div>
+            </div>
+            <div class="card card--frameless">
+              <div class="card__content">
+                <p>
+                  <em
+                    >Travel is fatal to prejudice, bigotry, and
+                    narrow-mindedness.</em
+                  >
+                </p>
+                <p>— Mark Twain</p>
+              </div>
+            </div>
+            <div class="card card--horizontal card--frameless">
+              <div class="card__content card__content--has-icon">
+                <p>
+                  <i class="card__icon--large fas fa-plane"></i>
+                </p>
+                <p>
+                  <i class="card__icon--large fas fa-motorcycle"></i>
+                </p>
+                <p>
+                  <i class="card__icon--large fas fa-subway"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card card--featured">
+              <div class="card__side-by-side--m">
+                <div class="card__image">
+                  <img
+                    src="https://images.pexels.com/photos/1125278/pexels-photo-1125278.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"
+                  />
+                </div>
+                <div class="card__content padding-mlarge--l">
+                  <h2>Quisque volutpat.</h2>
+                  <hr />
+                  <p>
+                    Nulla metus metus, ullamcorper vel, tincidunt sed, euismod
+                    in, nibh. Quisque volutpat condimentum velit.
+                  </p>
+                  <p>
+                    Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos.
+                  </p>
+                  <div class="card__button">
+                    More
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card--vertical">
+              <div class="card__image">
+                <img
+                  src="https://images.pexels.com/photos/920968/pexels-photo-920968.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-2">
+      <div class="container"></div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"
+      integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
