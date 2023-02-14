@@ -10,6 +10,11 @@
   --button-background: #d5f0fb;
 
   --line: rgb(211, 207, 207);
+
+  --direction: to bottom right;
+  --linear-one: #bee7f8a5;
+  --linear-two: #2fdafcab;
+  --linear-three: rgb(153, 201, 248);
 }
 
 .dark-mode {
@@ -22,6 +27,11 @@
   --button-background: #3e3e52;
 
   --line: rgb(107, 106, 106);
+
+  --direction: to bottom right;
+  --linear-one: #141a1ca5;
+  --linear-two: #141d5fab;
+  --linear-three: rgb(84, 86, 88);
 }
 
 .height {
@@ -369,21 +379,22 @@ nav ul li a:active {
 
 footer {
   background: linear-gradient(
-    to bottom right,
-    #5bb8e0a5,
-    #51bbd1ab,
-    rgb(142, 255, 146)
+    var(--direction),
+    var(--linear-one),
+    var(--linear-two),
+    var(--linear-three)
   );
   width: 100%;
-  height: 400px;
+  height: fit-content;
   display: grid;
   place-items: center;
   position: relative;
+  transition: background 0.6s 0.1s;
 }
 
 footer span {
   position: absolute;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
   width: 100%;
   height: 100%;
 }
