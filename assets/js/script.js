@@ -130,6 +130,10 @@ window.addEventListener("resize", () => {
   }
 });
 
+const showCertificate = () => {
+  console.log("Hello");
+};
+
 var helloAnimation = bodymovin.loadAnimation({
   container: document.getElementById("hello"), // Required
   path: "/assets/json/hello.json", // Required

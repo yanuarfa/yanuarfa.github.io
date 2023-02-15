@@ -176,7 +176,9 @@
               <p>Indonesia</p>
               <p>Student and Computer addict</p>
               <a href="" class="btn-cta bg-contact">Contact Me</a>
-              <a href="" class="btn-cta bg-contact">Contact Me</a>
+              <a href="javascript:void(0)" class="btn-cta bg-contact"
+                >Certification</a
+              >
             </div>
           </div>
         </div>
@@ -218,6 +220,8 @@
             <div class="tech">
               <p class="lang" data-lang="React">React</p>
               <p class="lang" data-lang="Laravel">Laravel</p>
+              <p class="lang" data-lang="Hapi">Hapi</p>
+              <p class="lang" data-lang="Express">Express</p>
             </div>
             <h3>Databases</h3>
             <div class="tech">
@@ -242,10 +246,14 @@
           <div class="grid-item">
             <h2>Links</h2>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Certification</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li>
+                <a href="javascript:void(0);" onclick="showCertificate();"
+                  >Certification</a
+                >
+              </li>
             </ul>
           </div>
           <div class="grid-item">
@@ -261,6 +269,9 @@
         <div class="footer-bottom-item">
           <p>&copy Yanuar Faturahman 2023</p>
         </div>
+      </div>
+      <div class="modal-certificate pointer-events-none" id="modalCertificate">
+        <div class="wrapper-certificate"></div>
       </div>
     </footer>
 
