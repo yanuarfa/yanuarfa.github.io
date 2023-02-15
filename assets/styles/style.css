@@ -266,6 +266,11 @@ nav {
   border-radius: 0.4rem;
   overflow: hidden;
   margin: 1.4rem auto;
+  background-color: var(--background-default);
+}
+
+.wrapper-card > .wrapper-content {
+  padding: 1rem;
 }
 
 .upper-background {
@@ -284,7 +289,7 @@ nav {
   overflow: hidden;
   object-position: center;
   border-radius: 50%;
-  outline: 4px solid white;
+  outline: 4px solid var(--background-secondary);
 }
 
 .wrapper-profile-picture > img {
@@ -293,7 +298,7 @@ nav {
 }
 
 .profile-section {
-  background-color: aliceblue;
+  background-color: var(--background-default);
   width: 100%;
 }
 
@@ -301,6 +306,57 @@ nav {
   width: 100%;
   padding: 5rem 1rem 1rem 1rem;
   /* background-color: rgb(27, 103, 169); */
+}
+
+.wrapper-profile > h2 {
+  font-weight: 500;
+  color: var(--black);
+}
+
+.wrapper-profile > p {
+  font-size: 0.9rem;
+  color: var(--black-secondary);
+}
+
+.wrapper-content > h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.wrapper-content > h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.wrapper-content > p {
+  color: var(--black-secondary);
+  text-align: justify;
+  margin: 0.6rem 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.6rem 0;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.lang {
+  padding: 0.6rem 1.6rem;
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  margin: 2px;
+  cursor: default;
+  color: var(--black-secondary);
+  transition: border 0.6s, color 0.6s, background-color 0.4s;
 }
 
 .bg-contact {
@@ -311,6 +367,47 @@ nav {
 .bg-contact:hover {
   background-color: rgb(0, 42, 255) !important;
   box-shadow: 0 0 0 5px rgba(34, 57, 205, 0.242) !important;
+}
+
+.lang[data-lang="Javascript"]:hover {
+  background-color: #ffd52d;
+  border-color: #ffd52d;
+  color: var(--black);
+}
+.lang[data-lang="HTML"]:hover {
+  background-color: #f15c26;
+  border-color: #f15c26;
+  color: var(--black);
+}
+.lang[data-lang="CSS"]:hover {
+  background-color: #417dff;
+  border-color: #417dff;
+  color: var(--black);
+}
+.lang[data-lang="PHP"]:hover {
+  background-color: #5c38ff;
+  border-color: #5c38ff;
+  color: var(--black);
+}
+.lang[data-lang="React"]:hover {
+  background-color: #16b8e5;
+  border-color: #16b8e5;
+  color: var(--black);
+}
+.lang[data-lang="Laravel"]:hover {
+  background-color: #f93b19;
+  border-color: #f93b19;
+  color: var(--black);
+}
+.lang[data-lang="MongoDB"]:hover {
+  background-color: #38b543;
+  border-color: #38b543;
+  color: var(--black);
+}
+.lang[data-lang="MySQL"]:hover {
+  background-color: #4f7edb;
+  border-color: #4f7edb;
+  color: var(--black);
 }
 /* Hamburger Menu BTN */
 
