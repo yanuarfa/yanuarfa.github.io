@@ -8,6 +8,11 @@
   --background-loading: rgba(222, 222, 222, 0.829);
 
   --button-background: #d5f0fb;
+  /* Blue */
+  --button-color-blue: rgb(70, 104, 215);
+  --button-blue: #e2e5fa;
+  --button-blue-hover: rgb(61, 95, 207);
+  /* Blue */
 
   --line: rgb(211, 207, 207);
 
@@ -25,6 +30,10 @@
   --background-secondary: rgb(39, 44, 61);
 
   --button-background: #3e3e52;
+  /* Blue */
+  --button-color-blue: rgb(110, 143, 248);
+  --button-blue: #3b3f56;
+  /* Blue */
 
   --line: rgb(107, 106, 106);
 
@@ -48,12 +57,12 @@
 }
 
 .bg-blue {
-  background-color: #e2e5fa !important;
-  color: rgb(70, 104, 215) !important;
+  background-color: var(--button-blue) !important;
+  color: var(--button-color-blue) !important;
 }
 
 .bg-blue:hover {
-  background-color: rgb(61, 95, 207) !important;
+  background-color: var(--button-blue-hover) !important;
   box-shadow: 0 0 0 5px rgba(84, 107, 255, 0.242) !important;
   color: #fff !important;
 }
@@ -583,7 +592,7 @@ footer span {
     height: 100%;
     border-radius: inherit;
     opacity: 0;
-    transition: opacity 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
   }
 
   .item:hover::after {
