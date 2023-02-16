@@ -8,6 +8,9 @@
   --background-loading: rgba(222, 222, 222, 0.829);
 
   --button-background: #d5f0fb;
+
+  --modal-bg-color: rgb(254, 254, 255);
+  --modal-bg-backdrop-color: rgba(108, 108, 111, 0.164);
   /* Blue */
   --button-color-blue: rgb(70, 104, 215);
   --button-blue: #e2e5fa;
@@ -30,6 +33,9 @@
   --background-secondary: rgb(39, 44, 61);
 
   --button-background: #3e3e52;
+
+  --modal-bg-color: rgb(32, 36, 49);
+  --modal-bg-backdrop-color: rgba(52, 49, 71, 0.203);
   /* Blue */
   --button-color-blue: rgb(110, 143, 248);
   --button-blue: #3b3f56;
@@ -220,7 +226,7 @@ nav ul li a:active {
   background-color: var(--background-loading);
   margin: 0 8px;
   border-radius: 8px;
-  object-position: center;
+  /* object-position: center; */
   cursor: pointer;
   transition: width 0.6s;
   overflow: hidden;
@@ -228,7 +234,6 @@ nav ul li a:active {
 
 .item img {
   width: inherit;
-  height: inherit;
   object-fit: cover;
   z-index: -1;
   border-radius: inherit;

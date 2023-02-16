@@ -46,9 +46,12 @@ nav {
 }
 
 #home,
-#projects,
-#about {
+#projects {
   scroll-margin-top: 40px;
+}
+
+#about {
+  scroll-margin-top: 100px;
 }
 
 .container {
@@ -423,9 +426,10 @@ nav {
 .modal-certificate {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   backdrop-filter: blur(20px);
+  background-color: var(--modal-bg-backdrop-color);
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -433,6 +437,7 @@ nav {
   opacity: 0;
   margin: 0;
   transition: opacity 0.3s;
+  z-index: -1;
 }
 
 .pointer-events-none {
@@ -444,18 +449,24 @@ nav {
   height: 90%;
   border-radius: 1rem;
   box-shadow: 2px 2px 10px 0 rgba(23, 20, 46, 0.164);
-  background-color: rgb(138, 87, 87);
+  background-color: var(--modal-bg-color);
   overflow: hidden;
 }
 
 .header-certificate {
   width: 100%;
-  height: 10%;
+  height: 15%;
   /* background-color: #15284d; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.4rem;
+  padding: 0 1.8rem;
+}
+
+.header-certificate > h2 {
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .header-certificate > a {
@@ -468,14 +479,19 @@ nav {
   position: relative;
 }
 
+.header-certificate > a:active .close-btn {
+  background-color: var(--black);
+}
+
 .close-btn {
   width: 30px;
   height: 2px;
   border-radius: 10px;
   position: absolute;
-  background-color: var(--black);
-  top: 17px;
-  left: 3px;
+  background-color: var(--black-secondary);
+  top: 19px;
+  left: 5px;
+  transition: background-color 0.3s;
 }
 
 .close-btn:nth-child(1) {

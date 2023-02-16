@@ -135,6 +135,7 @@ const modalCertificate = document.getElementById("modalCertificate");
 const showCertificate = () => {
   console.log(modalCertificate);
   modalCertificate.style.opacity = 1;
+  modalCertificate.style.zIndex = 10;
   document.body.style.overflowY = "hidden";
   if (modalCertificate.classList.contains("pointer-events-none")) {
     modalCertificate.classList.remove("pointer-events-none");
@@ -143,9 +144,16 @@ const showCertificate = () => {
 
 const closeCertificate = () => {
   modalCertificate.style.opacity = 0;
+  setTimeout(() => {
+    modalCertificate.style.zIndex = -1;
+  }, 200);
   modalCertificate.classList.add("pointer-events-none");
   document.body.style.overflowY = "auto";
 };
+
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+});
 
 var helloAnimation = bodymovin.loadAnimation({
   container: document.getElementById("hello"), // Required
