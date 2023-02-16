@@ -130,8 +130,21 @@ window.addEventListener("resize", () => {
   }
 });
 
+const modalCertificate = document.getElementById("modalCertificate");
+
 const showCertificate = () => {
-  console.log("Hello");
+  console.log(modalCertificate);
+  modalCertificate.style.opacity = 1;
+  document.body.style.overflowY = "hidden";
+  if (modalCertificate.classList.contains("pointer-events-none")) {
+    modalCertificate.classList.remove("pointer-events-none");
+  }
+};
+
+const closeCertificate = () => {
+  modalCertificate.style.opacity = 0;
+  modalCertificate.classList.add("pointer-events-none");
+  document.body.style.overflowY = "auto";
 };
 
 var helloAnimation = bodymovin.loadAnimation({
