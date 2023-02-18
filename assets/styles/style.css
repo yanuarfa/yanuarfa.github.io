@@ -702,6 +702,14 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     gap: 0.4rem;
   }
+
+  .wrapper-certificate {
+    height: 50%;
+  }
+
+  .header-certificate > h2 {
+    font-size: 1rem;
+  }
 }
 
 .top-20 {
