@@ -158,6 +158,41 @@ window.onclick = function (e) {
   }
 };
 
+const title = document.getElementById("title");
+const home = document.getElementById("home");
+const projects = document.getElementById("projects");
+const about = document.getElementById("about");
+const menu = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", () => {
+  if (home.offsetHeight > window.pageYOffset) {
+    menu[0].classList.add("active");
+    menu[1].classList.remove("active");
+    if (menu[2].classList.contains("active")) {
+      menu[2].classList.remove("active");
+    }
+    title.innerText = "Home | Yanuar Faturahman";
+  } else if (home.offsetHeight + projects.offsetHeight > window.pageYOffset) {
+    if (menu[0].classList.contains("active")) {
+      menu[0].classList.remove("active");
+    }
+    menu[1].classList.add("active");
+    if (menu[2].classList.contains("active")) {
+      menu[2].classList.remove("active");
+    }
+    title.innerText = "Projects | Yanuar Faturahman";
+  } else if (
+    home.offsetHeight + projects.offsetHeight + about.offsetHeight >
+    window.pageYOffset
+  ) {
+    if (menu[1].classList.contains("active")) {
+      menu[1].classList.remove("active");
+    }
+    menu[2].classList.add("active");
+    title.innerText = "About | Yanuar Faturahman";
+  }
+});
+
 var helloAnimation = bodymovin.loadAnimation({
   container: document.getElementById("hello"), // Required
   path: "/assets/json/hello.json", // Required

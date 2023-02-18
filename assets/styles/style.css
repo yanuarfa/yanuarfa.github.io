@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 :root {
   /* --button-color: rgb(66, 66, 74); */
@@ -193,6 +194,10 @@ nav {
   position: relative;
 }
 
+nav ul li a {
+  position: relative;
+}
+
 .link {
   color: var(--black-secondary);
   transition: 0.4s all;
@@ -220,6 +225,10 @@ nav {
 
 .link:hover::after {
   width: 50px;
+}
+
+.active {
+  color: var(--black);
 }
 
 .toggle-dark-mode {
@@ -311,6 +320,7 @@ nav {
 .wrapper-profile-picture > img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .profile-section {
@@ -331,7 +341,7 @@ nav {
 
 .wrapper-profile > p {
   font-size: 0.9rem;
-  color: var(--black-secondary);
+  color: var(--text-secondary);
 }
 
 .wrapper-content > h2 {
@@ -348,7 +358,7 @@ nav {
 }
 
 .wrapper-content > p {
-  color: var(--black-secondary);
+  color: var(--text-secondary);
   text-align: justify;
   margin: 0.6rem 0;
   font-size: 0.9rem;
@@ -500,6 +510,23 @@ nav {
 
 .header-certificate > a:active .close-btn {
   background-color: var(--black);
+}
+
+.body-certificate {
+  width: 100%;
+  height: 85%;
+  padding: 1.8rem;
+  background-color: #848689;
+}
+
+.certificate {
+  background-color: #16b8e5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); */
+  gap: 1px;
+  flex-wrap: wrap;
 }
 
 .close-btn {

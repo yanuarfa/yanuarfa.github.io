@@ -2,6 +2,7 @@
   --black: rgb(23, 36, 83);
   --black-secondary: rgb(69, 81, 121);
   --text-accent: rgb(251, 251, 251);
+  --text-secondary: rgb(85, 85, 98);
 
   --background-default: rgb(255, 255, 255);
   --background-secondary: rgb(241, 242, 243);
@@ -38,6 +39,7 @@
 .dark-mode {
   --black: rgb(255, 255, 255);
   --black-secondary: rgb(254, 254, 254);
+  --text-secondary: rgb(225, 225, 225);
 
   --background-default: rgb(32, 36, 49);
   --background-secondary: rgb(39, 44, 61);
