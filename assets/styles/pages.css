@@ -7,7 +7,8 @@
   --background-secondary: rgb(241, 242, 243);
   --background-loading: rgba(222, 222, 222, 0.829);
 
-  --button-background: #d5f0fb;
+  --button-background: #80ddff52;
+  --button-border-color: rgb(26, 38, 54);
 
   --modal-bg-color: rgb(254, 254, 255);
   --modal-bg-backdrop-color: rgba(108, 108, 111, 0.164);
@@ -17,12 +18,21 @@
   --button-blue-hover: rgb(61, 95, 207);
   /* Blue */
 
+  /* Contact */
+  --button-contact-color: #93c5e761;
+  /* Contact */
+
   --line: rgb(211, 207, 207);
 
   --direction: to bottom right;
   --linear-one: #bee7f8a5;
   --linear-two: #2fdafcab;
   --linear-three: rgb(153, 201, 248);
+
+  /* Scroll */
+  --scroll-bg-color: rgb(189, 189, 189);
+  --scroll-handler-color: rgb(87, 87, 87);
+  /* Scroll */
 }
 
 .dark-mode {
@@ -32,7 +42,7 @@
   --background-default: rgb(32, 36, 49);
   --background-secondary: rgb(39, 44, 61);
 
-  --button-background: #3e3e52;
+  --button-background: #3b3f56;
 
   --modal-bg-color: rgb(32, 36, 49);
   --modal-bg-backdrop-color: rgba(52, 49, 71, 0.203);
@@ -40,6 +50,9 @@
   --button-color-blue: rgb(110, 143, 248);
   --button-blue: #3b3f56;
   /* Blue */
+  /* Contact */
+  --button-contact-color: #3b3f56;
+  /* Contact */
 
   --line: rgb(107, 106, 106);
 
@@ -47,6 +60,10 @@
   --linear-one: #141a1ca5;
   --linear-two: #141d5fab;
   --linear-three: rgb(84, 86, 88);
+  /* Scroll */
+  --scroll-bg-color: rgb(103, 103, 103);
+  --scroll-handler-color: rgb(233, 233, 233);
+  /* Scroll */
 }
 
 .height {
@@ -125,7 +142,7 @@ nav ul li a:active {
 } */
 
 #hello {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -133,7 +150,7 @@ nav ul li a:active {
   width: 100%;
   height: calc(100% * 3);
   opacity: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .wrapper-hero-section {
@@ -182,8 +199,8 @@ nav ul li a:active {
 .btn-cta {
   margin: 0.6rem auto;
   background-color: var(--button-background);
-  color: rgb(0, 200, 255);
-  border: none;
+  color: rgb(103, 222, 255);
+  border: unset;
   text-decoration: none;
   border-radius: 8px;
   padding: 1rem 2rem;
@@ -194,7 +211,7 @@ nav ul li a:active {
 }
 
 .btn-cta:hover {
-  background-color: rgb(0, 200, 255);
+  background-color: var(--button-background);
   box-shadow: 0 0 0 5px rgba(0, 200, 255, 0.242);
   color: #fff;
   cursor: pointer;
@@ -548,8 +565,8 @@ footer {
   .btn-cta {
     margin: 1rem 0.2rem;
     background-color: var(--button-background);
-    color: rgb(0, 200, 255);
-    border: none;
+    border: unset;
+    color: rgb(13, 172, 245);
     text-decoration: none;
     border-radius: 8px;
     padding: 1rem 2rem;
@@ -560,6 +577,7 @@ footer {
 
   .btn-cta:hover {
     background-color: rgb(0, 200, 255);
+    border: none;
     box-shadow: 0 0 0 5px rgba(0, 200, 255, 0.242);
     color: #fff;
   }

@@ -173,10 +173,16 @@ const hello = () => {
   helloElement.style.opacity = 1;
   helloElement.style.zIndex = 10;
   document.body.style.overflowY = "hidden";
+  if (helloElement.classList.contains("pointer-events-none")) {
+    helloElement.classList.remove("pointer-events-none");
+  }
   helloAnimation.goToAndPlay(0, true);
   helloAnimation.addEventListener("complete", () => {
     helloElement.style.opacity = 0;
     helloElement.style.zIndex = -1;
     document.body.style.overflowY = "auto";
+    if (!helloElement.classList.contains("pointer-events-none")) {
+      helloElement.classList.add("pointer-events-none");
+    }
   });
 };

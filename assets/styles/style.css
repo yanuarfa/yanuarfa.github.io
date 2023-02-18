@@ -11,6 +11,19 @@
   -webkit-text-size-adjust: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-handler-color);
+  border-radius: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -322,7 +335,7 @@ nav {
 }
 
 .wrapper-content > h2 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.2rem;
   color: var(--black);
   margin-bottom: 8px;
@@ -363,12 +376,13 @@ nav {
 }
 
 .bg-contact {
-  background-color: rgb(13, 58, 206) !important;
-  color: #fff !important;
+  background-color: var(--button-contact-color) !important;
+  color: #56b1ee !important;
 }
 
 .bg-contact:hover {
-  background-color: rgb(9, 42, 150) !important;
+  background-color: #7ba5c2 !important;
+  color: rgb(255, 255, 255) !important;
   box-shadow: 0 0 0 5px rgba(90, 102, 180, 0.242) !important;
 }
 
@@ -436,7 +450,7 @@ nav {
   align-items: center;
   opacity: 0;
   margin: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease-in-out;
   z-index: -1;
 }
 
