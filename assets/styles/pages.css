@@ -92,6 +92,10 @@
   color: #fff !important;
 }
 
+h1 {
+  color: var(--black);
+}
+
 /* Individual Style */
 
 /* header::before {

@@ -412,12 +412,22 @@ nav {
   border-color: #5c38ff;
   color: var(--black);
 }
+.lang[data-lang="Typescript"]:hover {
+  background-color: #2f74c0;
+  border-color: #2f74c0;
+  color: var(--black);
+}
 .lang[data-lang="React"]:hover {
   background-color: #16b8e5;
   border-color: #16b8e5;
   color: var(--black);
 }
 .lang[data-lang="Laravel"]:hover {
+  background-color: #f93b19;
+  border-color: #f93b19;
+  color: var(--black);
+}
+.lang[data-lang="Codeigniter"]:hover {
   background-color: #f93b19;
   border-color: #f93b19;
   color: var(--black);
